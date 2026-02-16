@@ -3253,7 +3253,7 @@ if (IS_HEADER) {
 }
 // Tự động phát nhạc khi trang được tải
 document.addEventListener("DOMContentLoaded", function() {
-    var audio = new Audio('./audio/ten-tep-nhac-cua-ban.mp3'); // Sửa tên tệp nhạc tại đây
+    var audio = new Audio('./audio/RỒI TA SẼ NGẮM PHÁO HOA CÙNG NHAU - MV OFFICIAL - Olew.mp3'); // Sửa tên tệp nhạc tại đây
     audio.loop = true; // Phát lặp lại
     audio.volume = 0.5; // Âm lượng (từ 0.0 đến 1.0)
     audio.play().catch(function(error) {
