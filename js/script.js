@@ -3251,3 +3251,12 @@ if (IS_HEADER) {
 		});
 	}, 0);
 }
+// Tự động phát nhạc khi trang được tải
+document.addEventListener("DOMContentLoaded", function() {
+    var audio = new Audio('./audio/ten-tep-nhac-cua-ban.mp3'); // Sửa tên tệp nhạc tại đây
+    audio.loop = true; // Phát lặp lại
+    audio.volume = 0.5; // Âm lượng (từ 0.0 đến 1.0)
+    audio.play().catch(function(error) {
+        console.log("Trình duyệt chặn tự động phát nhạc: " + error);
+    });
+});
