@@ -3259,7 +3259,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 2. Tạo một nút bấm HTML để người dùng tương tác
     var btn = document.createElement("button");
-    btn.innerHTML = "Bật nhạc";
+    btn.innerHTML = "Yêu anh thì nhấn nút";
     btn.style.position = "absolute";
     btn.style.top = "50%";
     btn.style.left = "50%";
