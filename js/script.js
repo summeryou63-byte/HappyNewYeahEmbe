@@ -3252,15 +3252,30 @@ if (IS_HEADER) {
 	}, 0);
 }
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Sửa lại đường dẫn đúng với tên file thực tế của bạn
+    // 1. Khởi tạo nhạc với đường dẫn đúng
     var audio = new Audio('audio/phaohoa.mp3');
     audio.loop = true;
     audio.volume = 0.5;
 
-    // 2. Tạo một nút bấm hoặc chờ người dùng click vào trang để phát
-    document.body.addEventListener('click', function() {
+    // 2. Tạo một nút bấm HTML để người dùng tương tác
+    var btn = document.createElement("button");
+    btn.innerHTML = "Bật nhạc";
+    btn.style.position = "absolute";
+    btn.style.top = "50%";
+    btn.style.left = "50%";
+    btn.style.transform = "translate(-50%, -50%)";
+    btn.style.zIndex = "1000";
+    btn.style.padding = "10px 20px";
+    btn.style.fontSize = "18px";
+    btn.style.cursor = "pointer";
+    document.body.appendChild(btn);
+
+    // 3. Khi người dùng bấm nút, phát nhạc
+    btn.addEventListener('click', function() {
         audio.play().catch(function(error) {
             console.log("Trình duyệt chặn tự động phát nhạc: " + error);
         });
-    }, { once: true }); // { once: true } giúp sự kiện chỉ chạy 1 lần duy nhất
+        // Ẩn nút bấm sau khi đã click
+        btn.style.display = 'none';
+    });
 });
