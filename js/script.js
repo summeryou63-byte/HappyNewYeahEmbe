@@ -3255,7 +3255,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // 1. Khởi tạo nhạc với đường dẫn đúng
     var audio = new Audio('audio/phaohoa.mp3');
     audio.loop = true;
-    audio.volume = 0.7;
+    audio.volume = 1;
 
     // 2. Tạo một nút bấm HTML để người dùng tương tác
     var btn = document.createElement("button");
