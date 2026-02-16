@@ -76,6 +76,11 @@ const imageSources = [
 	"./images/image3.jpeg",
 	"./images/image4.jpeg",
 	"./images/image5.jpeg",
+	"./images/image6.jpeg",
+	"./images/image7.jpeg",
+	"./images/image8.jpeg",
+	"./images/image9.jpeg",
+	"./images/image10.jpeg",
 ];
 const loadedImages = [];
 const imageBursts = [];
@@ -111,11 +116,11 @@ function addImageBurst(x, y, baseSize = 200) {
 	const size = adjustedBaseSize * (0.6 + Math.random() * 0.8);
 	
 	// Random: một số sẽ rơi xuống, một số sẽ biến mất ngay
-	const willFall = Math.random() < 0.6; // 60% sẽ rơi xuống, 40% biến mất ngay
+	const willFall = Math.random() < 0.6; // 70% sẽ rơi xuống, 30% biến mất ngay
 	
 	let life, speedX, speedY;
 	if (willFall) {
-		// Ảnh sẽ rơi xuống trong 4 giây
+		// Ảnh sẽ rơi xuống trong 5 giây
 		life = 3000;
 		// Giảm tốc độ rơi trên mobile để mượt hơn
 		const speedMultiplier = isMobile ? 0.7 : 1;
