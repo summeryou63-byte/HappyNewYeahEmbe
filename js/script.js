@@ -3245,7 +3245,7 @@ if (IS_HEADER) {
 
 		// 在 soundManager 加载完毕后调用 init
 		Promise.all(promises).then(init, (reason) => {
-			console.log("资源文件加载失败");
+			console.log("Tài nguyên bị lỗi");
 			init();
 			return Promise.reject(reason);
 		});
