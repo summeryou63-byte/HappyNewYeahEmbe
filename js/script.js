@@ -115,7 +115,7 @@ function addImageBurst(x, y, baseSize = 200) {
 	
 	let life, speedX, speedY;
 	if (willFall) {
-		// Ảnh sẽ rơi xuống trong 3 giây
+		// Ảnh sẽ rơi xuống trong 4 giây
 		life = 3000;
 		// Giảm tốc độ rơi trên mobile để mượt hơn
 		const speedMultiplier = isMobile ? 0.7 : 1;
