@@ -550,13 +550,13 @@ store.subscribe(handleStateChange);
 
 // Mảng câu chúc màu hồng
 const WISH_MESSAGES = [
-	"Năm mới an khang thịnh vượng",
-	"Năm mới bình an",
-	"Chúc mọi điều ước của em đều trở thành hiện thực ✨",
-	"Chúc gia đình em luôn bình an và hạnh phúc ❤️",
-	"Chúc em luôn khỏe mạnh và tràn đầy năng lượng 💪",
-	"Chúc công việc thuận lợi, thăng tiến không ngừng 🚀",
-	"Chúc em luôn mỉm cười và yêu đời mỗi ngày 😊",
+	"Năm mới chúc em bé anh ngày càng xinh gái",
+	"Năm mới chúc em bình an bên gia đình có thật nhiều sức khỏe",
+	"Chúc mọi điều ước của em đều trở thành hiện thực✨",
+	"Chúc em luôn hạnh phúc cùng gia đình và khi bên anh❤️",
+	"Chúc em luôn thành công trong học tập , cuộc sống💪",
+	"Chúc em không còn gặp xui xẻo , buồn bả trong năm nay🚀",
+	"Chúc em luôn hạnh phúc khi yêu anh và đồng hành tiếp tục cùng anh 😊",
 	"Chúc em gặp nhiều may mắn và niềm vui 🎉",
 ];
 
@@ -3253,7 +3253,7 @@ if (IS_HEADER) {
 }
 document.addEventListener("DOMContentLoaded", function() {
     // 1. Sửa lại đường dẫn đúng với tên file thực tế của bạn
-    var audio = new Audio('phaohoa.mp3');
+    var audio = new Audio('audio/phaohoa.mp3');
     audio.loop = true;
     audio.volume = 0.5;
 
